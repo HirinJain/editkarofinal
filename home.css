@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+}
+
+header {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    padding: 1rem; 
+    background-color: #170034;
+    color: rgb(244, 238, 238);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem; 
+    padding: 0.3rem 0.8rem;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    border: 2px solid rgb(10, 10, 10);
+    border-radius: 5px;
+}
+
+
+img.logo {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    max-width: 120px; 
+}
+
+
+nav button {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    background-color: #e90707;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: #101014b3;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap; 
+}
+
+.content {
+    max-width: 45%;
+}
+
+
+h1 {
+    font-size: 2.5rem; 
+    color: #fafafa;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-links img {
+    width: 30px;
+    margin-right: 10px;
+    padding: 0.3rem;
+}
+
+
+.mockup {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+
+.desktop {
+    width: 450px; 
+    filter: drop-shadow(0 0 12px #3af);
+    height: auto;
+}
+.eform {
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    display: block;
+
+    /* filter: drop-shadow(0 0 10px #3af); */
+
+}
+#subscribeForm {
+  left: 0;
+  right: 0;
+}
+
+.mobile {
+    width: 200px; 
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    filter: drop-shadow(0 0 10px #3af); }
+
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .content {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem; /* Adjust heading for mobile */
+    }
+
+    /* Adjust mockup sizes */
+    .mockup {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .desktop {
+        width: 100%;
+    }
+
+    .mobile {
+        width: 150px;
+        right: auto;
+        bottom: -10px;
+    }
+
+    /* Fix navbar for mobile */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 5px;
+    }
+
+    img.logo {
+        max-width: 100px;
+    }
+}
