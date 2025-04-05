@@ -86,7 +86,7 @@ nav a:hover {
 
 
 .video-card:hover {
-  transform: scale(1.2) translateY(-10px);
+  transform: scale(1.0) translateY(-10px);
   z-index: 10;
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 12px rgba(128, 0, 128, 0.8); 
